@@ -14,19 +14,20 @@ https://www.hwhardsoft.de/deutsch/projekte/m-bus-rpi-hat/ (No Affiliate-Link )
 
 # Prerequisites: 
 ## Installation of libmbus (C++)
-
- - sudo apt install git libtool autoconf cmake build-essential
- - sudo apt-get install -y cmake
- - sudo git clone https://github.com/rscada/libmbus.git
- - cd libmbus
- - sudo ./build.sh
- - sudo make install
- - cd bin
- - sudo ln -s /usr/local/lib/libmbus.so.0 /usr/lib/libmbus.so.0
-
+```
+ sudo apt install git libtool autoconf cmake build-essential
+ sudo apt-get install -y cmake
+ sudo git clone https://github.com/rscada/libmbus.git
+ cd libmbus
+ sudo ./build.sh
+ sudo make install
+ cd bin
+ sudo ln -s /usr/local/lib/libmbus.so.0 /usr/lib/libmbus.so.0
+```
 ## Mosquitto Client
- - sudo apt-get install mosquitto-clients
-
+```
+  sudo apt-get install mosquitto-clients
+```
 
 # Disclaimer
 
