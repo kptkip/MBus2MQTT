@@ -13,6 +13,19 @@ https://www.hwhardsoft.de/deutsch/projekte/m-bus-rpi-hat/ (No Affiliate-Link )
 
 
 # Prerequisites: 
+## UART(0) Configuration 
+(While using a USB-MBUS Adapter this step is obsolete!)
+```
+  sudo raspi-config
+  goto '3 Interfacing Options'
+  goto 'I6 Serial Port'
+  'Would you like a login shell to be accessible over serial?' --> NO
+  'Would you like the serial port hardware to be enabled?' --> YES
+  Finish raspi-config
+  sudo echo "dtoverlay=disable-bt" | sudo tee -a /boot/config.txt
+  sudo systemctl disable hciuart
+  reboot
+```
 ## Installation of libmbus (C++)
 ```
  sudo apt install git libtool autoconf cmake build-essential
@@ -28,7 +41,10 @@ https://www.hwhardsoft.de/deutsch/projekte/m-bus-rpi-hat/ (No Affiliate-Link )
 ```
   sudo apt-get install mosquitto-clients
 ```
-
+## libxml2-utils
+```
+  sudo apt-get installlibxml2-utils
+```
 # Disclaimer
 
 This repository contains files for demonstration purposes only. Use the files on your own risk. I am not responsible for any damage!
