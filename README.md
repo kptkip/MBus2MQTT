@@ -15,7 +15,8 @@ https://www.hwhardsoft.de/deutsch/projekte/m-bus-rpi-hat/ (No Affiliate-Link )
 # Prerequisites: 
 ## Installation of libmbus (C++)
 
- - sudo apt install git libtool autoconf cmake build-essential sudo apt-get install -y cmake
+ - sudo apt install git libtool autoconf cmake build-essential
+ - sudo apt-get install -y cmake
  - sudo git clone https://github.com/rscada/libmbus.git
  - cd libmbus
  - sudo ./build.sh
